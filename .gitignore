@@ -1,0 +1,25 @@
+# Ignore Python compiled files
+Asteroid/__pycache__/
+Asteroid/*.pyc
+
+# Ignore any log files
+Asteroid/*.log
+
+# Ignore specific files
+Asteroid/my_generated_file.txt
+
+# Ignore virtual environment directory
+Asteroid/.venv/
+Asteroid/env/
+
+# Ignores any file named .bak in any subdirectory
+**/*.bak
+
+# Editor/IDE specific files (examples, you might add more for your specific setup)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Pygame specific (though less common for simple projects, could be rele    vant later)
+# If Pygame were to create logs or temporary files, you'd list them here
