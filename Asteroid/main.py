@@ -34,8 +34,14 @@ def main():
                 running = False
                 print("Exiting game.")
                 return
-
+            
         updatable.update(dt)  # Update the player's state
+
+        for asteroid in asteroids:
+            if asteroid.check_collision(player):
+                print("Game Over!")
+                running = False
+                return
 
         screen.fill((0, 0, 0))  # Clear the screen with black
 
